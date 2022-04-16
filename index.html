@@ -12,12 +12,23 @@
     <h2>Etch-A-Sketch</h2>
     <div class="container">
 
-    </div>
-    <div>
-      <button id="clear" onclick="clearGrid()">Clear</button>
-      <button onclick="setColor('white')">Eraser</button>
-      <button onclick="setColor('black')">Black</button>
-      <button onclick="setColor('rainbow')">Rainbow</button>
+      <div class="side-bar">
+        <div class="grid-count">
+          <button onclick="makeGrid(50,50)">50X50</button>
+          <button onclick="makeGrid(80,80)">80X80</button>
+          <button onclick="makeGrid(100,100)">100X100</button>
+          <button onclick="makeGrid(200,200)">200X200</button>
+        </div>
+        <div>
+          <button onclick="setColor('black')">Black</button>
+          <button onclick="setColor('rainbow')">Rainbow</button>
+          <button onclick="setColor('white')">Eraser</button>
+          <button id="clear" onclick="clearGrid()">Clear</button>
+        </div>
+      </div>
+
+      <div class="grid-container"></div>
+
     </div>
   </body>
   <script src="script.js"></script>

@@ -1,9 +1,10 @@
-const container = document.querySelector('.container');
+const container = document.querySelector('.grid-container');
 let chosenColor = 'black';
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 // function to create grid boxes
 function makeGrid(rows, cols) {
+  clearGrid();
   container.style.setProperty('--grid-rows', rows);
   container.style.setProperty('--grid-cols', cols);
 
@@ -51,4 +52,4 @@ function clearGrid(){
   })
 }
 
-makeGrid(100,100);
+makeGrid(50,50);
